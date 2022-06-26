@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+*{
+box-sizing: border-box;
+font-family: 'Grape Nuts', cursive;
+}
+body{
+  font-weight: 800;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #2C3337;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #eae0d5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3337;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3337;
+}
+.info{
+    color: #eae0d5;
+}
+img.icono-social{
+    transition: 1.4s;
+}
+img.icono-social:hover{
+    opacity: .7;
+    transition: .7s;
+}
+.main-text{
+    text-align: center;
+}
+.main-title{
+    margin: 3rem auto 2rem auto;
+    font-size: 4rem;
+}
+.main-p{
+    padding: 1rem 9rem;
+}
+.redSocial{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+.menu{
+    margin-bottom: 1rem;
+}
+.linkList{
+    display: flex;
+}
+nav ul li{
+    margin: auto 3rem;
+    font-size: 2rem;
+}
+nav ul li a{
+    transition: 1.4s;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    transition: .7s;
+}
+.projects{
+    background-color: #eae0d5;
+}
+.card{
+    grid-column: 1 / 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: .5rem;
+}
+.card-img{
+    max-width: 100%;
+    grid-column: 1 / 2;
+    box-shadow: 2px 2px rgb(111 112 97);
+    transition: all ease 1s;
+}
+.card-img:hover{
+    transform: scale(1.1);
+    opacity: .8;
+    transition: all ease .7s;
+}
+.card-text{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+.logo{
+    width: 14vh;
+    margin-left: 4rem;
+    transition: 1.4s;
+}
+.logo:hover{
+    opacity: .7;
+    transform: scale(.95);
+    transition: all ease .7s;
+}
+.icono-social{
+    width: 10vh;
+}
+@media (max-width: 500px){
+    .projects {
+    grid-template-columns: 1fr;
+}
+}
+@media (max-width: 700px){
+.projects {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 960px){
+.projects {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+.aboutUs-img{
+    transition: 3s;
+    min-width: 100%;
+}
+.aboutUs-img:hover{
+    transform: scale(.95);
+    transition: 2s;
+}
+input{
+    min-width: 33vw;
+    font-size: 2.2rem;
+    margin: 2rem;
+    text-align: center;
+}
+.centerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonForm{
+    color: #eae0d5;
+    background-color: #2C3337;
+    border: 1px black;
+    font-size: 1.8rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 1.45s;
+}
+.buttonForm:hover{
+    transform: scale(.95);
+    transition: all ease 1s;
+}
+.reverse-card{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.reverse-image{
+    grid-column: 2 / 3;
+    width: 120vw;
+}
+.reverseText-card{
+    grid-column: 1 / 2;
+}
